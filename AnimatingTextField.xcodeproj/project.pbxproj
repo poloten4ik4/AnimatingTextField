@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D7AA1481E9163D800EBB7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA13D1E9163D800EBB7B7 /* AppDelegate.swift */; };
+		7D7AA1491E9163D800EBB7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AA13E1E9163D800EBB7B7 /* Assets.xcassets */; };
+		7D7AA14A1E9163D800EBB7B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AA1401E9163D800EBB7B7 /* LaunchScreen.storyboard */; };
+		7D7AA14B1E9163D800EBB7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AA1421E9163D800EBB7B7 /* Main.storyboard */; };
+		7D7AA14C1E9163D800EBB7B7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AA1441E9163D800EBB7B7 /* Info.plist */; };
+		7D7AA14D1E9163D800EBB7B7 /* LoadingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA1451E9163D800EBB7B7 /* LoadingTextField.swift */; };
+		7D7AA14E1E9163D800EBB7B7 /* SpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA1461E9163D800EBB7B7 /* SpinningView.swift */; };
+		7D7AA14F1E9163D800EBB7B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AA1471E9163D800EBB7B7 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D7AA13D1E9163D800EBB7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AnimatingTextField/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		7D7AA13E1E9163D800EBB7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AnimatingTextField/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		7D7AA1411E9163D800EBB7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D7AA1431E9163D800EBB7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		7D7AA1441E9163D800EBB7B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AnimatingTextField/Info.plist; sourceTree = SOURCE_ROOT; };
+		7D7AA1451E9163D800EBB7B7 /* LoadingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingTextField.swift; path = AnimatingTextField/LoadingTextField.swift; sourceTree = SOURCE_ROOT; };
+		7D7AA1461E9163D800EBB7B7 /* SpinningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpinningView.swift; path = AnimatingTextField/SpinningView.swift; sourceTree = SOURCE_ROOT; };
+		7D7AA1471E9163D800EBB7B7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AnimatingTextField/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		7DDE7A1E1E880C7F006A3080 /* AnimatingTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatingTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DDE7A1B1E880C7E006A3080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D7AA13F1E9163D800EBB7B7 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				7D7AA1401E9163D800EBB7B7 /* LaunchScreen.storyboard */,
+				7D7AA1421E9163D800EBB7B7 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = AnimatingTextField/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		7DDE7A151E880C7E006A3080 = {
+			isa = PBXGroup;
+			children = (
+				7DDE7A201E880C7F006A3080 /* AnimatingTextField */,
+				7DDE7A1F1E880C7F006A3080 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DDE7A1F1E880C7F006A3080 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DDE7A1E1E880C7F006A3080 /* AnimatingTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DDE7A201E880C7F006A3080 /* AnimatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7D7AA13D1E9163D800EBB7B7 /* AppDelegate.swift */,
+				7D7AA13E1E9163D800EBB7B7 /* Assets.xcassets */,
+				7D7AA13F1E9163D800EBB7B7 /* Base.lproj */,
+				7D7AA1441E9163D800EBB7B7 /* Info.plist */,
+				7D7AA1451E9163D800EBB7B7 /* LoadingTextField.swift */,
+				7D7AA1461E9163D800EBB7B7 /* SpinningView.swift */,
+				7D7AA1471E9163D800EBB7B7 /* ViewController.swift */,
+			);
+			name = AnimatingTextField;
+			path = "UITextField+LoadingIndicator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DDE7A1D1E880C7E006A3080 /* AnimatingTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DDE7A301E880C7F006A3080 /* Build configuration list for PBXNativeTarget "AnimatingTextField" */;
+			buildPhases = (
+				7DDE7A1A1E880C7E006A3080 /* Sources */,
+				7DDE7A1B1E880C7E006A3080 /* Frameworks */,
+				7DDE7A1C1E880C7E006A3080 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimatingTextField;
+			productName = "UITextField+LoadingIndicator";
+			productReference = 7DDE7A1E1E880C7F006A3080 /* AnimatingTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DDE7A161E880C7E006A3080 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mikhail Zaslavskiy";
+				TargetAttributes = {
+					7DDE7A1D1E880C7E006A3080 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7DDE7A191E880C7E006A3080 /* Build configuration list for PBXProject "AnimatingTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DDE7A151E880C7E006A3080;
+			productRefGroup = 7DDE7A1F1E880C7F006A3080 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DDE7A1D1E880C7E006A3080 /* AnimatingTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DDE7A1C1E880C7E006A3080 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7AA14C1E9163D800EBB7B7 /* Info.plist in Resources */,
+				7D7AA14B1E9163D800EBB7B7 /* Main.storyboard in Resources */,
+				7D7AA1491E9163D800EBB7B7 /* Assets.xcassets in Resources */,
+				7D7AA14A1E9163D800EBB7B7 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DDE7A1A1E880C7E006A3080 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7AA14D1E9163D800EBB7B7 /* LoadingTextField.swift in Sources */,
+				7D7AA1481E9163D800EBB7B7 /* AppDelegate.swift in Sources */,
+				7D7AA14F1E9163D800EBB7B7 /* ViewController.swift in Sources */,
+				7D7AA14E1E9163D800EBB7B7 /* SpinningView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D7AA1401E9163D800EBB7B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7AA1411E9163D800EBB7B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7D7AA1421E9163D800EBB7B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7AA1431E9163D800EBB7B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DDE7A2E1E880C7F006A3080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DDE7A2F1E880C7F006A3080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DDE7A311E880C7F006A3080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AnimatingTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MZ.AnimatingTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7DDE7A321E880C7F006A3080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AnimatingTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MZ.AnimatingTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DDE7A191E880C7E006A3080 /* Build configuration list for PBXProject "AnimatingTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DDE7A2E1E880C7F006A3080 /* Debug */,
+				7DDE7A2F1E880C7F006A3080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DDE7A301E880C7F006A3080 /* Build configuration list for PBXNativeTarget "AnimatingTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DDE7A311E880C7F006A3080 /* Debug */,
+				7DDE7A321E880C7F006A3080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DDE7A161E880C7E006A3080 /* Project object */;
+}

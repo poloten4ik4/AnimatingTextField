@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatingTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="San Francisco Bay Area" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DHG-zn-5hm" customClass="LoadingTextField" customModule="AnimatingTextField" customModuleProvider="target">
+                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="1" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="YZf-X6-oQA">
+                                <rect key="frame" x="54" y="121" width="266" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="dnV-Mv-aLF"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="speedValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="xg2-ib-VAD"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed: 100 (default)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-QL-vUg">
+                                <rect key="frame" x="110" y="92" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCc-gq-G0p">
+                                <rect key="frame" x="127" y="179" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B6q-Y8-H3O"/>
+                                    <constraint firstAttribute="width" constant="50" id="Hni-Sd-qAX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YOq-Kr-OS8" appends="YES" id="cEB-iS-xtP"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-GT-Kxc">
+                                <rect key="frame" x="197" y="179" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9Yp-Gd-ZdG"/>
+                                    <constraint firstAttribute="height" constant="50" id="CNe-QE-RHv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gLN-5v-G6g" appends="YES" id="raL-hb-gHQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1B-5X-HdZ">
+                                <rect key="frame" x="197" y="252" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Vhb-K2-T9d"/>
+                                    <constraint firstAttribute="height" constant="50" id="aV5-nm-3rT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7YF-03-csG" appends="YES" id="PwL-R1-r3E"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJv-2Y-x1o">
+                                <rect key="frame" x="127" y="329" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7Or-Co-dzd"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZL3-6T-l5n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7cJ-Gv-KNT" appends="YES" id="vgW-eA-LJD"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9v-9Q-ojs">
+                                <rect key="frame" x="127" y="252" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.58431372549019611" green="0.6470588235294118" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AXC-if-3RT"/>
+                                    <constraint firstAttribute="width" constant="50" id="pCd-Ed-K4u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fnq-6W-NWq" appends="YES" id="1KL-7R-fau"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Us-yd-wtz">
+                                <rect key="frame" x="197" y="329" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="SJm-6C-k6Q"/>
+                                    <constraint firstAttribute="height" constant="50" id="rzg-I3-MSw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="a2w-HE-2GJ" appends="YES" id="dtf-hu-Pqg"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S9v-9Q-ojs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35.5" id="4Xv-Oc-xuL"/>
+                            <constraint firstItem="nTE-GT-Kxc" firstAttribute="top" secondItem="YZf-X6-oQA" secondAttribute="bottom" constant="28" id="8Bn-ZM-l6F"/>
+                            <constraint firstItem="S9v-9Q-ojs" firstAttribute="top" secondItem="rCc-gq-G0p" secondAttribute="bottom" constant="23" id="9xG-mW-yO0"/>
+                            <constraint firstItem="K1B-5X-HdZ" firstAttribute="top" secondItem="nTE-GT-Kxc" secondAttribute="bottom" constant="23" id="J89-Vj-Ldd"/>
+                            <constraint firstItem="DHG-zn-5hm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="LVY-wC-zdF"/>
+                            <constraint firstItem="DHG-zn-5hm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MLB-An-Hnt"/>
+                            <constraint firstItem="YZf-X6-oQA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MU3-Gb-bWn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DHG-zn-5hm" secondAttribute="trailing" id="Mzr-tk-png"/>
+                            <constraint firstItem="rCc-gq-G0p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35.5" id="RfE-TL-x6i"/>
+                            <constraint firstItem="9Us-yd-wtz" firstAttribute="top" secondItem="K1B-5X-HdZ" secondAttribute="bottom" constant="27" id="aFY-d4-OVR"/>
+                            <constraint firstItem="rCc-gq-G0p" firstAttribute="top" secondItem="YZf-X6-oQA" secondAttribute="bottom" constant="28" id="dYR-Cw-00O"/>
+                            <constraint firstItem="K1B-5X-HdZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="34.5" id="ee4-wW-Ksd"/>
+                            <constraint firstItem="nTE-GT-Kxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="34.5" id="h5I-8U-j3h"/>
+                            <constraint firstItem="TJv-2Y-x1o" firstAttribute="top" secondItem="S9v-9Q-ojs" secondAttribute="bottom" constant="27" id="hSB-OQ-Yqu"/>
+                            <constraint firstItem="Hvx-QL-vUg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jbl-le-2rt"/>
+                            <constraint firstItem="9Us-yd-wtz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="34.5" id="tDt-Sa-NBs"/>
+                            <constraint firstItem="YZf-X6-oQA" firstAttribute="top" secondItem="DHG-zn-5hm" secondAttribute="bottom" constant="51" id="uAl-z5-z6e"/>
+                            <constraint firstItem="TJv-2Y-x1o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35.5" id="uS0-zK-jmi"/>
+                            <constraint firstItem="Hvx-QL-vUg" firstAttribute="top" secondItem="DHG-zn-5hm" secondAttribute="bottom" constant="22" id="yeo-le-NDm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exampleTextField" destination="DHG-zn-5hm" id="uKu-6e-VsU"/>
+                        <outlet property="speedValueLabel" destination="Hvx-QL-vUg" id="ol6-bz-5aP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YOq-Kr-OS8">
+                    <connections>
+                        <action selector="colorSelected:" destination="BYZ-38-t0r" id="Tur-Cr-y3D"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gLN-5v-G6g">
+                    <connections>
+                        <action selector="colorSelected:" destination="BYZ-38-t0r" id="C9c-jk-tEF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7YF-03-csG">
+                    <connections>
+                        <action selector="colorSelected:" destination="BYZ-38-t0r" id="gYh-hx-0oj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7cJ-Gv-KNT">
+                    <connections>
+                        <action selector="colorSelected:" destination="BYZ-38-t0r" id="Ulb-IV-VrS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fnq-6W-NWq">
+                    <connections>
+                        <action selector="colorSelected:" destination="BYZ-38-t0r" id="YOR-0y-mtQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="a2w-HE-2GJ">
+                    <connections>
+                        <action selector="colorSelected:" destination="BYZ-38-t0r" id="zE3-4L-nIZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-175" y="132"/>
+        </scene>
+    </scenes>
+</document>
